@@ -4,7 +4,7 @@ public class ThreeTier {
 		try{
 			Class.forName("com.mysql.cj.jdbc.Driver"); //This is the new class name for version 8
 			
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/cs157a","root",""); //I dont have a password
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/cs157a","root","cs157a"); //I dont have a password
 			
 			Statement stmt = con.createStatement();
 			ResultSet rs = stmt.executeQuery("select * from student");
